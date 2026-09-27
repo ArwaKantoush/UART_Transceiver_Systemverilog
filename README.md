@@ -7,8 +7,6 @@
 
 A modular, fully parameterized, and cycle-accurate **UART (Universal Asynchronous Receiver/Transmitter) IP Core** implemented in synthesizable SystemVerilog. The architecture features independent transmitter (`uart_tx`) and receiver (`uart_rx`) modules, modular datapath partitioning, deterministic FSM control, dynamic parity calculation/checking, error detection, and compliance with **STARC** coding guidelines via static lint analysis.
 
-```
-
 ---
 
 ## 📑 Table of Contents
@@ -179,7 +177,7 @@ vsim -do Scripts/run_TX.do
 ## 📄 Documentation
 
 For full implementation details, elaboration schematics, and linting logs, refer to the complete report:
-👉 **[`UART_Report.pdf`](UART_Report.pdf)**
+👉 **[`UART_Report.pdf`]([UART_Report.pdf](https://github.com/ArwaKantoush/UART_Transceiver_Systemverilog/blob/main/UART_Report.pdf))**
 
 ---
 
@@ -188,7 +186,5 @@ For full implementation details, elaboration schematics, and linting logs, refer
 **Arwa Ashraf Kantoush**
 
 *Electronics & Communications Engineering*
-
-```
 
 ```
