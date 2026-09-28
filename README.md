@@ -29,7 +29,7 @@ A modular, fully parameterized, and cycle-accurate **UART (Universal Asynchronou
 * **Parameterized Datapath**: Configurable payload width via `DATA_W` (default is 8 bits).
 * **Dynamic Parity Support**: Runtime-configurable parity enable (`i_par_en`) and odd/even mode selection (`i_par_odd`).
 * **Comprehensive Error Detection**:
->- Parity error detection (`o_parity_err`).
+> Parity error detection (`o_parity_err`).
 > Framing error detection (`o_frame_err`) checking for valid stop bit assertion.
 
 
