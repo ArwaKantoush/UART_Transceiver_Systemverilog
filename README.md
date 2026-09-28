@@ -29,8 +29,8 @@ A modular, fully parameterized, and cycle-accurate **UART (Universal Asynchronou
 * **Parameterized Datapath**: Configurable payload width via `DATA_W` (default is 8 bits).
 * **Dynamic Parity Support**: Runtime-configurable parity enable (`i_par_en`) and odd/even mode selection (`i_par_odd`).
 * **Comprehensive Error Detection**:
-> Parity error detection (`o_parity_err`).
-> Framing error detection (`o_frame_err`) checking for valid stop bit assertion.
+>- Parity error detection (`o_parity_err`).
+>- Framing error detection (`o_frame_err`) checking for valid stop bit assertion.
 
 
 * **Robust FSM Control**: Moore state machines isolating datapath registers, rejecting overlapping writes during transmission (`o_busy`), and delivering data via a single-cycle pulse ("flag-and-deliver").
@@ -119,11 +119,11 @@ Static lint analysis was conducted using **Siemens Questa Lint** compliant with 
 Functional verification was executed using self-checking testbenches in **QuestaSim**:
 
 * **Test Scenarios Covered**:
-       * Parity disabled transmission & reception.
-       * Alternating even and odd parity transactions.
-       * Deliberate parity error injection & flag validation.
-       * Deliberate framing error injection (corrupted stop bit).
-       * Back-to-back continuous frame transfers.
+>- Parity disabled transmission & reception.
+>- Alternating even and odd parity transactions.
+>- Deliberate parity error injection & flag validation.
+>- Deliberate framing error injection (corrupted stop bit).
+>- Back-to-back continuous frame transfers.
 
 
 * **Result**: `100% Data Delivery` verified by the automated scoreboard with **`RESULT: PASS`**.
